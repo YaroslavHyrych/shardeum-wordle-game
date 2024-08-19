@@ -122,7 +122,7 @@
         const placeholder = '-';
 
         const indexes = generateRandomNumbers(0, good.length);
-        result.innerHTML = good.sort().map(index => good[index]).join(', ');
+        result.innerHTML = indexes.sort().map(index => good[index]).join(', ');
 
         document.getElementById('form').addEventListener('submit', function(event) {
             event.preventDefault();
