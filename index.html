@@ -121,8 +121,8 @@
         const result = document.getElementById('result');
         const placeholder = '-';
 
-        const indexes = generateRandomNumbers(0, words.length);
-        result.innerHTML = indexes.sort().map(index => words[index]).join(', ');
+        const indexes = generateRandomNumbers(0, good.length);
+        result.innerHTML = good.sort().map(index => words[index]).join(', ');
 
         document.getElementById('form').addEventListener('submit', function(event) {
             event.preventDefault();
